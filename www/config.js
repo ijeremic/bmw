@@ -1,5 +1,11 @@
 System.config({
   "baseURL": "/",
+  "transpiler": "babel",
+  "babelOptions": {
+    "optional": [
+      "runtime"
+    ]
+  },
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
@@ -12,6 +18,8 @@ System.config({
     "angular": "github:angular/bower-angular@1.3.15",
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.13",
+    "babel": "npm:babel@4.7.16",
+    "babel-runtime": "npm:babel-runtime@4.7.16",
     "css": "github:systemjs/plugin-css@0.1.9",
     "text": "github:systemjs/plugin-text@0.0.2",
     "github:angular-ui/ui-router@0.2.13": {
@@ -71,6 +79,9 @@ System.config({
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
+    },
+    "npm:babel-runtime@4.7.16": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.1.2": {
       "base64-js": "npm:base64-js@0.0.8",
