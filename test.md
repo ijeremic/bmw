@@ -1,8 +1,0 @@
-
-
-pera
-
-mika
-
-xx
-dddiii

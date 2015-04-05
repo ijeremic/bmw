@@ -1,6 +1,0 @@
-zika
-
-
-zika
-iipp
-test
