@@ -1,11 +1,15 @@
 import angular from 'angular';
 
-export let indexControllerModule = angular.module('dataControllerModule', []);
+export let indexControllerModule = angular.module('indexControllerModule', []);
 
-dataControllerModule.controller('IndexController', ['$scope', function ($scope) {
+
+indexControllerModule.controller('IndexController', ['$scope', function ($scope) {
   let ctrl = this;
 
-  ctrl.helloWorld = function() {
-    $scope.world = "World";
-  }
+  //
+  // ctrl.helloWorld = function() {
+  //   $scope.world = "World";
+  // }
+  //
+
 }]);
