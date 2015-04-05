@@ -1,5 +1,5 @@
 import angular from 'angular';
-import 'styles/main.css!'
+import './styles/main.css!'
 
 export let mainModule = angular.module('bmwx', []);
 
