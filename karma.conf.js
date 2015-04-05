@@ -14,6 +14,10 @@ module.exports = function(config) {
       serveFiles: ['www/app/**/*.js', 'www/app/**/*.css', 'www/app/**/*.html']
     },
 
+    proxies: {
+      '/base/jspm_packages/': '/base/www/jspm_packages/'
+    },
+
     // list of files / patterns to load in the browser
     files: [
     ],
@@ -41,7 +45,6 @@ module.exports = function(config) {
     // enable / disable colors in the output (reporters and logs)
     colors: true,
 
-
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
     logLevel: config.LOG_INFO,
@@ -58,7 +61,6 @@ module.exports = function(config) {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false
   };
-
 
 
   config.set(configuration);
